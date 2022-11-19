@@ -134,7 +134,7 @@ class _searchState extends State<search> {
               borderRadius: BorderRadius.circular(100),
             ),
             child: mapScreen(
-                lat: data.lat!, long: data.long!, address: data.location!),
+                lat: data.latitude!, long: data.longtitude!, address: data.location!),
           ),
           SizedBox(
             height: 15,

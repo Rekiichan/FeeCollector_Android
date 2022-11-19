@@ -68,7 +68,6 @@ class _cameraState extends State<camera> {
                       print("thanh cong");
                       _image = File(file.path);
                       upImage();
-                      result = "30A 123.45";
                       Get.to(Check_in4(
                         imagePath: file,
                         imageName: file.name,

@@ -19,8 +19,8 @@ class MongoDbModel {
     this.time,
     this.timeM,
     this.location,
-    this.lat,
-    this.long,
+    this.latitude,
+    this.longtitude,
     this.price,
     this.pendingStatus = false,
   });
@@ -33,8 +33,8 @@ class MongoDbModel {
   String? time;
   String? timeM;
   String? location;
-  double? lat;
-  double? long;
+  double? latitude;
+  double? longtitude;
   int? price;
   bool? pendingStatus;
 
@@ -47,8 +47,8 @@ class MongoDbModel {
     time: json["time"],
     timeM: json["timeM"],
     location: json["location"],
-    lat: json["lat"],
-    long: json["long"],
+    latitude: json["latitude"],
+    longtitude: json["longtitude"],
     price: json["price"],
     pendingStatus: json["pendingStatus"]
   );
@@ -62,8 +62,8 @@ class MongoDbModel {
     "time": time,
     "timeM": timeM,
     "location": location,
-    "lat": lat,
-    "long": long,
+    "latitude": latitude,
+    "longtitude": longtitude,
     "price": price,
     "pendingStatus": pendingStatus,
   };

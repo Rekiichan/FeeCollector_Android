@@ -2,5 +2,5 @@
 // password = "0905853362Qx."
 
 const MONGO_CONN_URL =
-    "mongodb+srv://dbLearn:0905853362Qx.@cluster0.aholsy2.mongodb.net/test?retryWrites=true&w=majority";
-const USER_COLLECTION = "Fee Car";
+    "mongodb+srv://Vangdoan2:Vangdoan2@cluster0.aholsy2.mongodb.net/?retryWrites=true&w=majority";
+const USER_COLLECTION = "FeeCollector";

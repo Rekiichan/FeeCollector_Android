@@ -251,8 +251,8 @@ class _Check_in4State extends State<Check_in4> {
       String time,
       String timeM,
       String location,
-      double lat,
-      double long,
+      double latitude,
+      double longtitude,
       int price) async {
     var _id = M.ObjectId();
     final data = MongoDbModel(
@@ -264,8 +264,8 @@ class _Check_in4State extends State<Check_in4> {
         time: time,
         timeM: timeM,
         location: location,
-        lat: lat,
-        long: long,
+        latitude: latitude,
+        longtitude: longtitude,
         price: price);
     await MongoDatabase.insert(data);
   }
