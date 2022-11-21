@@ -106,7 +106,7 @@ class _cameraState extends State<camera> {
 
   upImage() async {
     var request = http.MultipartRequest(
-        "POST", Uri.parse("http://192.168.31.76:4000/"));
+        "POST", Uri.parse("http://192.168.1.192:4000/"));
     var pic = http.MultipartFile.fromBytes(
         'file', _image!.readAsBytesSync().buffer.asInt8List(),
         filename: "image_recognized.jpg");
@@ -115,5 +115,13 @@ class _cameraState extends State<camera> {
     var responseData = await response.stream.toBytes();
     result = String.fromCharCodes(responseData);
     print(result);
+    if (response.statusCode == 200)
+    {
+      result = String.fromCharCodes(responseData);
+    }
+    else
+    {
+      result = '';
+    }
   }
 }

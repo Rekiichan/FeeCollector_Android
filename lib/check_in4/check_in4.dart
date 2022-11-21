@@ -29,7 +29,7 @@ class _Check_in4State extends State<Check_in4> {
   DateTime _now = DateTime.now();
   String _timeRecord = DateFormat('hh:mm a').format(DateTime.now()).toString();
   String _timeMax = DateFormat('hh:mm a')
-      .format(DateTime.now().add(Duration(minutes: 2)))
+      .format(DateTime.now().add(Duration(minutes: 120)))
       .toString();
   String _selectedType = "Ô tô dưới 16 chỗ";
   List<String> typeList = [
